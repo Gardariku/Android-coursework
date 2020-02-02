@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DishActivity">
+
+    <ScrollView
+        android:id="@+id/dishScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Название блюда"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageDish"
+                android:layout_width="match_parent"
+                android:layout_height="231dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Фото блюда"
+                android:scaleType="fitXY"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/textViewIngr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ингридиенты:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Один, два, три" />
+
+            <TextView
+                android:id="@+id/textViewP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Свойства:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewProperties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Один, два, три" />
+
+            <TextView
+                android:id="@+id/textViewD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Подходит под диеты:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDiets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Один, два, три, четыре, пять." />
+
+            <TextView
+                android:id="@+id/textViewR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Рецепт:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Мой батя ебашит вообще адовые блюда.  Ну такой вот примерно рецепт усредненный, потому что вариаций масса.  Берется суп, он не греется, греть - это не про моего батю. Он берет это суп, вываливает его на сковороду и начинает жарить. Добавляет в него огромное количество лука, чеснока, перца черного и красного МУКИ! для вязкости, томатная паста сверху. Все это жарится до дыма. Потом снимается с огня и остужается на балконе. Потом батя заносит и щедро полив майонезом начинает есть. При этом ест со сковороды шкрябая по ней ложкой. Ест и приговаривает полушепотом ух бля. При этом у него на лбу аж пот выступает. Любезно мне иногда предлагает, но я отказываюсь. Надо ли говорить о том какой дичайший пердеж потом? Вонища такая, что обои от стен отклеиваются." />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

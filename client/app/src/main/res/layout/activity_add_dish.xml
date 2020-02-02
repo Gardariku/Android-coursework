@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.AddDishActivity">
+
+    <ScrollView
+        android:id="@+id/scrollAddDish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Название блюда"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editAddName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="true"
+                android:ems="10"
+                android:hint="Введите название"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageDish"
+                android:layout_width="match_parent"
+                android:layout_height="231dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Фото блюда"
+                android:scaleType="fitXY"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/textViewAddType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Тип:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editAddType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="true" />
+
+            <TextView
+                android:id="@+id/textViewIngr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ингридиенты:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editAddIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="true" />
+
+            <TextView
+                android:id="@+id/textViewP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Свойства:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editAddProp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="true" />
+
+            <TextView
+                android:id="@+id/textViewR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Рецепт:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editAddRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Введите рецепт"
+                android:editable="true"
+                android:hint="Опишите рецепт приготовления" />
+
+            <Button
+                android:id="@+id/buttonConfirmAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@android:string/ok" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
